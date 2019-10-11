@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh './configure'
-        sh 'whoami'
+        sh 'sudo apt install gcc'
       }
     }
   }
