@@ -4,13 +4,13 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'alpine'
+          image 'ubuntu'
         }
 
       }
       steps {
-        sh './configure'
         sh 'sudo apt install gcc'
+        sh './configure'
       }
     }
   }
