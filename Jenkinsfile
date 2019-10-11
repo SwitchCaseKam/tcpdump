@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''pwd
-ls -la'''
+        sh './configure'
       }
     }
   }
