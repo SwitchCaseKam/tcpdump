@@ -5,6 +5,7 @@ pipeline {
       agent {
         docker {
           image 'alpine'
+          args '-u 0'
         }
 
       }
